@@ -5,7 +5,7 @@
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "mountain_peak",
-      "maxzoom": 16,
+      "maxzoom": 18,
       "filter": [
         "all",
         [
@@ -25,8 +25,8 @@
               " "
             ],
             [
-              12,
-              "{name} {ele}m"
+              8,
+              "{name}\n{ele}m"
             ]
           ]
         },
@@ -53,7 +53,7 @@
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "mountain_peak",
-      "maxzoom": 16,
+      "maxzoom": 18,
       "filter": [
         "all",
         [
@@ -72,8 +72,8 @@
               " "
             ],
             [
-              12,
-              "{name} {ele}m"
+              8,
+              "{name}\n{ele}m"
             ]
           ]
         },

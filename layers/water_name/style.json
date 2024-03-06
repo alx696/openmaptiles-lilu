@@ -11,7 +11,7 @@
           "Noto Sans Regular"
         ],
         "text-size": 12,
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name}",
         "visibility": "visible",
         "text-max-width": 5,
         "symbol-placement": "line"
@@ -37,14 +37,14 @@
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "water_name",
-      "minzoom": 16,
+      "minzoom": 14,
       "maxzoom": 24,
       "layout": {
         "text-font": [
           "Noto Sans Regular"
         ],
         "text-size": 11,
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name}",
         "visibility": "visible",
         "text-max-width": 5
       },

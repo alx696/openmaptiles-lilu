@@ -329,7 +329,7 @@
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "waterway",
-      "minzoom": 0,
+      "minzoom": 10,
       "layout": {
         "text-font": [
           "Noto Sans Regular"
@@ -346,9 +346,8 @@
             ]
           ]
         },
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name}",
         "visibility": "visible",
-        "symbol-spacing": 400,
         "text-max-width": 5,
         "symbol-placement": "line"
       },

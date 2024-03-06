@@ -8,8 +8,7 @@
       "minzoom": 0,
       "layout": {
         "text-font": [
-          "Noto Sans Regular",
-          "Noto Sans Bold"
+          "Noto Sans Regular"
         ],
         "text-size": 12,
         "text-field": "{name:latin}\n{name:nonlatin}",
@@ -31,7 +30,7 @@
           "LineString"
         ]
       ],
-      "order": 152
+      "order": 128
     },
     {
       "id": "water_name_point",
@@ -68,7 +67,7 @@
           "ocean"
         ]
       ],
-      "order": 153
+      "order": 129
     }
   ]
 }

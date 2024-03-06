@@ -124,8 +124,7 @@
       "minzoom": 14,
       "layout": {
         "text-font": [
-          "Noto Sans Italic",
-          "Noto Sans Regular"
+          "Noto Sans Italic"
         ],
         "text-size": {
           "stops": [

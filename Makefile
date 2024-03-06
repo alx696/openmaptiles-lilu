@@ -9,6 +9,9 @@ SHELL         = /bin/bash
 # Layers definition and meta data
 TILESET_FILE := $(or $(TILESET_FILE),$(shell (. .env; echo $${TILESET_FILE})),openmaptiles.yaml)
 
+# Proxy for Wikidata
+WIKIDATA_PROXY := $(or $(WIKIDATA_PROXY),$(shell (. .env; echo $${WIKIDATA_PROXY})))
+
 # Options to run with docker and docker-compose - ensure the container is destroyed on exit
 # Containers run as the current user rather than root (so that created files are not root-owned)
 DC_OPTS ?= --rm --user=$(shell id -u):$(shell id -g)
@@ -573,7 +576,13 @@ bash: init-dirs
 
 .PHONY: import-wikidata
 import-wikidata: init-dirs
+ifeq ($(WIKIDATA_PROXY),)
+	@echo "直接连接wikidata"
 	$(DOCKER_COMPOSE) $(DC_CONFIG_CACHE) run $(DC_OPTS_CACHE) openmaptiles-tools import-wikidata --cache /cache/wikidata-cache.json $(TILESET_FILE)
+else
+	@echo "使用代理连接wikidata"
+	$(DOCKER_COMPOSE) $(DC_CONFIG_CACHE) run --env HTTP_PROXY="$(WIKIDATA_PROXY)" --env HTTPS_PROXY="$(WIKIDATA_PROXY)" $(DC_OPTS_CACHE) openmaptiles-tools import-wikidata --cache /cache/wikidata-cache.json $(TILESET_FILE)
+endif
 
 .PHONY: reset-db-stats
 reset-db-stats: init-dirs

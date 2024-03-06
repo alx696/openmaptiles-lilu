@@ -27,7 +27,7 @@
             ]
           ]
         },
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name}",
         "visibility": "visible",
         "symbol-spacing": 150,
         "text-max-width": 10,
@@ -86,7 +86,7 @@
           "borough"
         ]
       ],
-      "order": 193
+      "order": 174
     },
     {
       "id": "place_village",
@@ -111,7 +111,7 @@
             ]
           ]
         },
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name}",
         "visibility": "visible",
         "text-max-width": 8
       },
@@ -129,7 +129,7 @@
           "village"
         ]
       ],
-      "order": 199
+      "order": 175
     },
     {
       "id": "place_town",
@@ -154,7 +154,7 @@
             ]
           ]
         },
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name}",
         "visibility": "visible",
         "text-anchor": "bottom",
         "text-offset": [
@@ -177,7 +177,7 @@
           "town"
         ]
       ],
-      "order": 200
+      "order": 176
     },
     {
       "id": "place_state",
@@ -188,8 +188,7 @@
       "maxzoom": 12,
       "layout": {
         "text-font": [
-          "Noto Sans Regular",
-          "Noto Sans Bold"
+          "Noto Sans Regular"
         ],
         "text-size": {
           "stops": [
@@ -203,7 +202,7 @@
             ]
           ]
         },
-        "text-field": "{name:latin}",
+        "text-field": "{name}",
         "visibility": "visible",
         "text-padding": 2,
         "text-transform": "none",
@@ -228,7 +227,7 @@
           3
         ]
       ],
-      "order": 201
+      "order": 177
     },
     {
       "id": "place_city",
@@ -266,7 +265,7 @@
             ]
           ]
         },
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name}",
         "visibility": "visible",
         "icon-offset": [
           0,
@@ -311,7 +310,7 @@
           1
         ]
       ],
-      "order": 202
+      "order": 178
     },
     {
       "id": "place_capital",
@@ -350,7 +349,7 @@
             ]
           ]
         },
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name}",
         "visibility": "visible",
         "icon-offset": [
           0,
@@ -396,7 +395,7 @@
           2
         ]
       ],
-      "order": 203
+      "order": 179
     },
     {
       "id": "country_other",
@@ -425,7 +424,7 @@
             ]
           ]
         },
-        "text-field": "{name:latin}",
+        "text-field": "{name}",
         "visibility": "visible",
         "text-max-width": 6.25,
         "text-transform": "none"
@@ -449,7 +448,7 @@
           "iso_a2"
         ]
       ],
-      "order": 204
+      "order": 180
     },
     {
       "id": "country_3",
@@ -478,7 +477,7 @@
             ]
           ]
         },
-        "text-field": "{name:latin}",
+        "text-field": "{name}",
         "visibility": "visible",
         "text-max-width": 6.25,
         "text-transform": "none"
@@ -518,7 +517,7 @@
           "iso_a2"
         ]
       ],
-      "order": 205
+      "order": 181
     },
     {
       "id": "country_2",
@@ -547,7 +546,7 @@
             ]
           ]
         },
-        "text-field": "{name:latin}",
+        "text-field": "{name}",
         "visibility": "visible",
         "text-max-width": 6.25,
         "text-transform": "none"
@@ -587,7 +586,7 @@
           "iso_a2"
         ]
       ],
-      "order": 206
+      "order": 182
     },
     {
       "id": "country_1",
@@ -616,7 +615,7 @@
             ]
           ]
         },
-        "text-field": "{name:latin}",
+        "text-field": "{name}",
         "visibility": "visible",
         "text-max-width": 6.25,
         "text-transform": "none"
@@ -656,7 +655,7 @@
           "iso_a2"
         ]
       ],
-      "order": 207
+      "order": 183
     }
   ]
 }

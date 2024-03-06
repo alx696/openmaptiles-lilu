@@ -38,8 +38,7 @@
         "text-max-width": 6,
         "text-line-height": 1.1,
         "text-font": [
-          "Noto Sans Regular",
-          "Noto Sans Italic"
+          "Noto Sans Regular"
         ]
       },
       "paint": {
@@ -47,7 +46,7 @@
         "text-halo-color": "rgba(255, 255, 255, .8)",
         "text-halo-width": 1
       },
-      "order": 197
+      "order": 172
     },
     {
       "id": "mountain_peak_volcano",
@@ -86,8 +85,7 @@
         "text-max-width": 6,
         "text-line-height": 1.1,
         "text-font": [
-          "Noto Sans Regular",
-          "Noto Sans Italic"
+          "Noto Sans Regular"
         ]
       },
       "paint": {
@@ -95,7 +93,7 @@
         "text-halo-color": "rgba(255, 255, 255, .8)",
         "text-halo-width": 1
       },
-      "order": 198
+      "order": 173
     }
   ]
 }

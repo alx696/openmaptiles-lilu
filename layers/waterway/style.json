@@ -334,18 +334,7 @@
         "text-font": [
           "Noto Sans Regular"
         ],
-        "text-size": {
-          "stops": [
-            [
-              11,
-              10
-            ],
-            [
-              13,
-              12
-            ]
-          ]
-        },
+        "text-size": 9,
         "text-field": "{name}",
         "visibility": "visible",
         "text-max-width": 5,

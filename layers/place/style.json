@@ -459,7 +459,7 @@
       "maxzoom": 12,
       "layout": {
         "text-font": [
-          "Noto Sans Bold"
+          "Noto Sans Regular"
         ],
         "text-size": {
           "stops": [
@@ -528,7 +528,7 @@
       "maxzoom": 12,
       "layout": {
         "text-font": [
-          "Noto Sans Bold"
+          "Noto Sans Regular"
         ],
         "text-size": {
           "stops": [
@@ -597,7 +597,7 @@
       "maxzoom": 12,
       "layout": {
         "text-font": [
-          "Noto Sans Bold"
+          "Noto Sans Regular"
         ],
         "text-size": {
           "stops": [

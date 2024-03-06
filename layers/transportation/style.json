@@ -2481,36 +2481,24 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#bbbbbb",
+        "line-color": "rgba(137, 69, 67, 1)",
         "line-width": {
-          "base": 1.2,
           "stops": [
             [
-              13,
-              2
+              12,
+              5
             ],
             [
-              15,
-              3.5
+              14,
+              6
             ],
             [
               16,
               7
-            ],
-            [
-              17,
-              8.5
-            ],
-            [
-              18,
-              11
-            ],
-            [
-              19,
-              12
             ]
           ]
-        }
+        },
+        "line-opacity": 1
       },
       "metadata": {},
       "filter": [
@@ -2775,52 +2763,27 @@
       "minzoom": 13,
       "layout": {
         "line-cap": "round",
-        "line-join": "round",
-        "visibility": "visible"
+        "line-join": "round"
       },
       "paint": {
-        "line-color": "#bbbbbb",
+        "line-color": "rgba(177, 119, 117, 1)",
         "line-width": {
-          "base": 1.2,
           "stops": [
             [
-              13,
-              3
-            ],
-            [
-              14,
-              5
-            ],
-            [
-              15,
+              12,
               6
             ],
             [
+              14,
+              7
+            ],
+            [
               16,
-              12
-            ],
-            [
-              17,
-              13
-            ],
-            [
-              18,
-              17
+              8
             ]
           ]
         },
-        "line-opacity": {
-          "stops": [
-            [
-              10,
-              0
-            ],
-            [
-              12.5,
-              1
-            ]
-          ]
-        }
+        "line-opacity": 1
       },
       "metadata": {},
       "filter": [
@@ -4281,47 +4244,24 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": {
+        "line-color": "rgba(197, 114, 110, 1)",
+        "line-width": {
           "stops": [
             [
               9,
-              "rgba(220, 172, 170, 1)"
+              0.2
             ],
             [
               11,
-              "rgba(214, 83, 77, 1)"
+              2
+            ],
+            [
+              13,
+              4
             ]
           ]
         },
-        "line-width": {
-          "base": 1.2,
-          "stops": [
-            [
-              13,
-              0.9
-            ],
-            [
-              15,
-              2.3
-            ],
-            [
-              16,
-              5.4
-            ],
-            [
-              17,
-              6.9
-            ],
-            [
-              18,
-              9.4
-            ],
-            [
-              19,
-              10.4
-            ]
-          ]
-        }
+        "line-opacity": 1
       },
       "metadata": {},
       "filter": [
@@ -4484,48 +4424,20 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": {
+        "line-color": "rgba(201, 135, 132, 1)",
+        "line-width": {
           "stops": [
             [
               9,
-              "rgba(220, 172, 170, 1)"
+              0.5
             ],
             [
               11,
-              "rgba(214, 83, 77, 1)"
-            ]
-          ]
-        },
-        "line-width": {
-          "base": 1.2,
-          "stops": [
-            [
-              12,
-              1
+              2.5
             ],
             [
               13,
-              1.9
-            ],
-            [
-              14,
-              3.8
-            ],
-            [
-              15,
-              4.8
-            ],
-            [
-              16,
-              10.4
-            ],
-            [
-              17,
-              11.4
-            ],
-            [
-              18,
-              15.4
+              4.5
             ]
           ]
         },
@@ -4784,12 +4696,8 @@
           "base": 1.2,
           "stops": [
             [
-              9,
-              0.7
-            ],
-            [
-              10,
-              0.7
+              8,
+              0.8
             ],
             [
               11,

@@ -8,7 +8,7 @@ tileset:
     - layers/boundary/boundary.yaml
     - layers/transportation_name/transportation_name.yaml
     - layers/place/place.yaml
-    - layers/poi/poi.yaml
+    - layers/lilu_poi/lilu_poi.yaml
   name: OpenMapTiles
   version: 3.14.0
   id: openmaptiles

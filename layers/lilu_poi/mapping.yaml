@@ -1,0 +1,40 @@
+# tables 中的 lilu_poi_point 在 lilu_poi.sql 中使用时前面需要加上 osm_ ！
+
+# subclass:
+#  attraction 景点
+#  camp_site 营地
+#  picnic_site 野餐地
+#  place_of_worship 宗教
+#  fuel 油站
+#  hospital 医院
+
+# tourism values , see http://taginfo.openstreetmap.org/keys/tourism#values
+def_poi_mapping_tourism: &poi_mapping_tourism
+  - attraction
+  - camp_site
+  - picnic_site
+
+# amenity values , see http://taginfo.openstreetmap.org/keys/amenity#values
+def_poi_mapping_amenity: &poi_mapping_amenity
+  - place_of_worship
+  - fuel
+  - hospital
+
+ef_poi_mapping: &poi_mapping
+  tourism: *poi_mapping_tourism
+  amenity: *poi_mapping_amenity
+
+tables:
+  lilu_poi_point:
+    type: point
+    columns:
+      - name: osm_id
+        type: id
+      - name: geometry
+        type: geometry
+      - name: name
+        key: name
+        type: string
+      - name: type
+        type: mapping_value
+    mapping: *poi_mapping

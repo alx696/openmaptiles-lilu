@@ -1,0 +1,18 @@
+# datasource 的 query 中表名是 lilu_poi.sql 中的 FUNCTION 名称！
+
+layer:
+  id: "lilu_poi"
+  description: |
+    里路POI
+  buffer_size: 4
+  fields:
+    name: 名称
+    type: 类型
+  datasource:
+    geometry_field: geometry
+    query: (SELECT geometry, name, type FROM layer_lilu_poi(!bbox!, z(!scale_denominator!), !pixel_width!)) AS t
+schema:
+  - ./lilu_poi.sql
+datasources:
+  - type: imposm3
+    mapping_file: ./mapping.yaml

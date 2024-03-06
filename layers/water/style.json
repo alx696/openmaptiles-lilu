@@ -32,7 +32,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "#aad3df"
+        "fill-color": "rgba(170, 211, 223, 0.2)"
       },
       "metadata": {},
       "filter": [

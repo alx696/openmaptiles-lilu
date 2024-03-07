@@ -39,7 +39,8 @@
         "text-line-height": 1.1,
         "text-font": [
           "Noto Sans Regular"
-        ]
+        ],
+        "text-allow-overlap": true
       },
       "paint": {
         "text-color": "#6e441e",
@@ -86,7 +87,8 @@
         "text-line-height": 1.1,
         "text-font": [
           "Noto Sans Regular"
-        ]
+        ],
+        "text-allow-overlap": true
       },
       "paint": {
         "text-color": "#d40000",

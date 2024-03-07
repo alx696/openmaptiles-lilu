@@ -1,0 +1,54 @@
+{
+  "layers": [
+    {
+      "id": "lilu_contour_lines",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "lilu_contour_lines",
+      "minzoom": 10,
+      "paint": {
+        "line-color": "rgba(214, 160, 69, 0.2)"
+      },
+      "order": 153
+    },
+    {
+      "id": "lilu_contour_lines_name_on_point",
+      "type": "symbol",
+      "source": "openmaptiles",
+      "source-layer": "lilu_contour_lines",
+      "minzoom": 10,
+      "maxzoom": 13,
+      "layout": {
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-field": "{elevation}",
+        "text-size": 9
+      },
+      "paint": {
+        "text-color": "rgba(214, 160, 69, 0.8)"
+      },
+      "order": 154
+    },
+    {
+      "id": "lilu_contour_lines_name_on_line",
+      "type": "symbol",
+      "source": "openmaptiles",
+      "source-layer": "lilu_contour_lines",
+      "minzoom": 13,
+      "layout": {
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-field": "{elevation}",
+        "text-size": 9,
+        "symbol-placement": "line",
+        "symbol-spacing": 100
+      },
+      "paint": {
+        "text-color": "rgba(214, 160, 69, 0.8)"
+      },
+      "order": 155
+    }
+  ]
+}

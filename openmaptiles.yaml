@@ -2,6 +2,7 @@ tileset:
   layers:
     - layers/water/water.yaml
     - layers/waterway/waterway.yaml
+    - layers/lilu_contour_lines/lilu_contour_lines.yaml
     - layers/mountain_peak/mountain_peak.yaml
     - layers/transportation/transportation.yaml
     - layers/water_name/water_name.yaml

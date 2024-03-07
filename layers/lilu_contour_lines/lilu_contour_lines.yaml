@@ -1,0 +1,12 @@
+layer:
+  id: "lilu_contour_lines"
+  description: |
+    等高线
+  buffer_size: 4
+  fields:
+    elevation: 海拔
+  datasource:
+    geometry_field: geometry
+    query: (SELECT elevation, geometry FROM layer_lilu_contour_lines(!bbox!, z(!scale_denominator!))) AS t
+schema:
+  - ./lilu_contour_lines.sql

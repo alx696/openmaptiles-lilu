@@ -8,8 +8,8 @@ tileset:
     - layers/water_name/water_name.yaml
     - layers/boundary/boundary.yaml
     - layers/transportation_name/transportation_name.yaml
-    - layers/place/place.yaml
     - layers/lilu_poi/lilu_poi.yaml
+    - layers/place/place.yaml
   name: OpenMapTiles
   version: 3.14.0
   id: openmaptiles

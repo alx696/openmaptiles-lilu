@@ -1,0 +1,34 @@
+tables:
+  lilu_place_point:
+    type: point
+    columns:
+      - name: osm_id
+        type: id
+      - name: name
+        key: name
+        type: string
+      - name: type
+        key: place
+        type: string
+      - key: capital
+        name: capital
+        type: string
+      - name: tags
+        type: hstore_tags
+      - name: geometry
+        type: geometry
+    filters:
+      require:
+        name: ["__any__"]
+    mapping:
+      place:
+        - state
+        - province
+        - city
+        - town
+        - village
+        - hamlet
+        - suburb
+        - quarter
+        - neighbourhood
+        - isolated_dwelling

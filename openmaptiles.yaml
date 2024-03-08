@@ -9,7 +9,7 @@ tileset:
     - layers/transportation/transportation.yaml
     - layers/transportation_name/transportation_name.yaml
     - layers/lilu_poi/lilu_poi.yaml
-#    - layers/place/place.yaml
+    - layers/lilu_place/lilu_place.yaml
   name: OpenMapTiles
   version: 3.14.0
   id: openmaptiles

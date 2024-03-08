@@ -14,9 +14,11 @@
         [
           "!in",
           "class",
+          "motorway_construction",
           "service",
           "track",
-          "minor"
+          "minor",
+          "path"
         ],
         [
           "<=",
@@ -37,7 +39,7 @@
         "text-halo-color": "rgba(255, 255, 255, 1)",
         "text-halo-width": 2
       },
-      "order": 144
+      "order": 26
     },
     {
       "id": "road-small-info",
@@ -55,7 +57,13 @@
           "class",
           "service",
           "track",
-          "minor"
+          "minor",
+          "path"
+        ],
+        [
+          "!=",
+          "brunnel",
+          "tunnel"
         ]
       ],
       "layout": {
@@ -71,7 +79,7 @@
         "text-halo-color": "rgba(255, 255, 255, 1)",
         "text-halo-width": 2
       },
-      "order": 145
+      "order": 27
     }
   ]
 }

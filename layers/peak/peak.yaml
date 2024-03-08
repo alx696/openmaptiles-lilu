@@ -4,7 +4,6 @@ layer:
     山峰
   buffer_size: 64
   fields:
-    osm_id: osm id
     name: 名称
     ele: 海拔(单位米)
   datasource:

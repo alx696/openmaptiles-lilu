@@ -72,39 +72,6 @@ SELECT osm_id,
        NULLIF(surface, '') AS surface
 FROM (
 
-         -- etldoc: osm_transportation_merge_linestring_gen_z4 -> layer_transportation:z4
-         SELECT osm_id,
-                geometry,
-                highway,
-                construction,
-                network,
-                NULL AS railway,
-                NULL AS aerialway,
-                NULL AS shipway,
-                NULL AS public_transport,
-                NULL AS service,
-                NULL AS access,
-                NULL::boolean AS toll,
-                is_bridge,
-                is_tunnel,
-                is_ford,
-                NULL::boolean AS expressway,
-                NULL::boolean AS is_ramp,
-                NULL::int AS is_oneway,
-                NULL AS man_made,
-                NULL::int AS layer,
-                NULL::int AS level,
-                NULL::boolean AS indoor,
-                NULL AS bicycle,
-                NULL AS foot,
-                NULL AS horse,
-                NULL AS mtb_scale,
-                NULL AS surface,
-                z_order
-         FROM osm_transportation_merge_linestring_gen_z4
-         WHERE zoom_level = 4
-         UNION ALL
-
          -- etldoc: osm_transportation_merge_linestring_gen_z5 -> layer_transportation:z5
          SELECT osm_id,
                 geometry,
@@ -171,7 +138,7 @@ FROM (
          WHERE zoom_level = 6
          UNION ALL
 
-         -- etldoc: osm_transportation_merge_linestring_gen_z9  ->  layer_transportation:z7
+         -- etldoc: osm_transportation_merge_linestring_gen_z7  ->  layer_transportation:z7
          SELECT osm_id,
                 geometry,
                 highway,
@@ -200,44 +167,11 @@ FROM (
                 NULL AS mtb_scale,
                 NULL AS surface,
                 z_order
-         FROM osm_transportation_merge_linestring_gen_z9
+         FROM osm_transportation_merge_linestring_gen_z7
          WHERE zoom_level = 7
          UNION ALL
 
-         -- etldoc: osm_transportation_merge_linestring_gen_z11  ->  layer_transportation:z8
-         SELECT osm_id,
-                geometry,
-                highway,
-                construction,
-                network,
-                NULL AS railway,
-                NULL AS aerialway,
-                NULL AS shipway,
-                NULL AS public_transport,
-                NULL AS service,
-                NULL AS access,
-                NULL::boolean AS toll,
-                is_bridge,
-                is_tunnel,
-                is_ford,
-                expressway,
-                NULL::boolean AS is_ramp,
-                NULL::int AS is_oneway,
-                NULL AS man_made,
-                NULL::int AS layer,
-                NULL::int AS level,
-                NULL::boolean AS indoor,
-                NULL AS bicycle,
-                NULL AS foot,
-                NULL AS horse,
-                NULL AS mtb_scale,
-                NULL AS surface,
-                z_order
-         FROM osm_transportation_merge_linestring_gen_z11
-         WHERE zoom_level = 8
-         UNION ALL
-
-         -- 缩放9: 小路,步道
+         -- 缩放8: 小路,步道
          SELECT hl.osm_id,
                 hl.geometry,
                 hl.highway,
@@ -271,7 +205,7 @@ FROM (
          WHERE NOT is_area
            AND
                CASE
-                    WHEN zoom_level >= 9 THEN
+                    WHEN zoom_level >= 8 THEN
                          CASE WHEN man_made='pier' THEN NOT ST_IsClosed(hl.geometry)
                               ELSE TRUE
                          END
@@ -380,7 +314,7 @@ FROM (
                 NULL AS surface,
                 z_order
          FROM osm_railway_linestring_gen_z10
-         WHERE zoom_level = 10
+         WHERE zoom_level >= 10
            AND railway IN ('rail', 'narrow_gauge')
            AND service = ''
 

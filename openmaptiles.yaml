@@ -6,8 +6,8 @@ tileset:
     - layers/waterway/waterway.yaml
     - layers/peak/peak.yaml
 #    - layers/lilu_contour_lines/lilu_contour_lines.yaml
-#    - layers/transportation/transportation.yaml
-#    - layers/transportation_name/transportation_name.yaml
+    - layers/transportation/transportation.yaml
+    - layers/transportation_name/transportation_name.yaml
 #    - layers/lilu_poi/lilu_poi.yaml
 #    - layers/place/place.yaml
   name: OpenMapTiles

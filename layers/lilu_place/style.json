@@ -79,6 +79,38 @@
       "order": 31
     },
     {
+      "id": "lilu_place_other",
+      "type": "symbol",
+      "source": "openmaptiles",
+      "source-layer": "lilu_place",
+      "minzoom": 9,
+      "layout": {
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-field": "{name}",
+        "text-size": 10
+      },
+      "paint": {
+        "text-color": "rgba(100, 100, 100, 1)",
+        "text-halo-color": "rgba(255, 255, 255, 1)",
+        "text-halo-width": 1
+      },
+      "filter": [
+        "all",
+        [
+          "!in",
+          "type",
+          "state",
+          "province",
+          "city",
+          "town",
+          "suburb"
+        ]
+      ],
+      "order": 32
+    },
+    {
       "id": "lilu_place_town",
       "type": "symbol",
       "source": "openmaptiles",
@@ -101,38 +133,6 @@
         [
           "in",
           "type",
-          "town",
-          "suburb"
-        ]
-      ],
-      "order": 32
-    },
-    {
-      "id": "lilu_place_other",
-      "type": "symbol",
-      "source": "openmaptiles",
-      "source-layer": "lilu_place",
-      "minzoom": 8,
-      "layout": {
-        "text-font": [
-          "Noto Sans Regular"
-        ],
-        "text-field": "{name}",
-        "text-size": 10
-      },
-      "paint": {
-        "text-color": "rgba(100, 100, 100, 1)",
-        "text-halo-color": "rgba(255, 255, 255, 1)",
-        "text-halo-width": 1
-      },
-      "filter": [
-        "all",
-        [
-          "!in",
-          "type",
-          "state",
-          "province",
-          "city",
           "town",
           "suburb"
         ]

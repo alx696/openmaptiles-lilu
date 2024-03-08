@@ -38,7 +38,7 @@
           "tunnel"
         ]
       ],
-      "order": 1
+      "order": 3
     },
     {
       "id": "waterway_river",
@@ -84,7 +84,7 @@
           1
         ]
       ],
-      "order": 2
+      "order": 6
     },
     {
       "id": "waterway_river_intermittent",
@@ -133,7 +133,7 @@
           1
         ]
       ],
-      "order": 3
+      "order": 8
     },
     {
       "id": "waterway_other",
@@ -179,7 +179,7 @@
           1
         ]
       ],
-      "order": 4
+      "order": 11
     },
     {
       "id": "waterway_other_intermittent",
@@ -229,7 +229,7 @@
           1
         ]
       ],
-      "order": 5
+      "order": 14
     },
     {
       "id": "waterway-bridge-case",
@@ -282,7 +282,7 @@
           "bridge"
         ]
       ],
-      "order": 95
+      "order": 15
     },
     {
       "id": "waterway-bridge",
@@ -322,10 +322,10 @@
           "bridge"
         ]
       ],
-      "order": 96
+      "order": 16
     },
     {
-      "id": "water_way_name",
+      "id": "waterway_name",
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "waterway",
@@ -354,7 +354,7 @@
           "LineString"
         ]
       ],
-      "order": 130
+      "order": 17
     }
   ]
 }

@@ -1,0 +1,17 @@
+tables:
+  peak_point:
+    type: point
+    columns:
+      - name: osm_id
+        type: id
+      - name: name
+        key: name
+        type: string
+      - name: ele
+        key: ele
+        type: string
+      - name: geometry
+        type: geometry
+    mapping:
+      natural:
+        - peak

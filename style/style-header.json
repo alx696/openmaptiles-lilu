@@ -9,18 +9,23 @@
   "zoom": 1,
   "bearing": 0,
   "pitch": 0,
+  "sprite": "http://localhost/map/sprite/sprite",
+  "glyphs": "http://localhost/map/glyphs/{fontstack}/{range}.pbf",
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "url": "mbtiles:///data/tiles.mbtiles"
+      "url": "http://localhost:8090"
     },
-    "attribution": {
-      "attribution": "<a href=\"https://www.openmaptiles.org/\" target=\"_blank\">&copy; OpenMapTiles</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
-      "type": "vector"
+    "arcgis_online": {
+      "type": "raster",
+      "minzoom": 4,
+      "maxzoom": 20,
+      "tileSize": 256,
+      "tiles": [
+        "https://server.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+      ]
     }
   },
-  "glyphs": "{fontstack}/{range}.pbf",
-  "sprite": "sprite",
   "layers": [
     {
       "id": "background",
@@ -30,6 +35,17 @@
       },
       "paint": {
         "background-color": "#f2efe9"
+      }
+    },
+    {
+      "id": "arcgis_online",
+      "type": "raster",
+      "metadata": {
+        "maputnik:comment": "ArcGIS卫星在线"
+      },
+      "source": "arcgis_online",
+      "layout": {
+        "visibility": "visible"
       }
     }
   ]

@@ -21,7 +21,7 @@
           1
         ]
       ],
-      "order": 6
+      "order": 1
     },
     {
       "id": "water",
@@ -48,7 +48,7 @@
           "tunnel"
         ]
       ],
-      "order": 7
+      "order": 2
     }
   ]
 }

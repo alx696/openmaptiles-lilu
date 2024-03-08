@@ -1,0 +1,18 @@
+layer:
+  id: "peak"
+  description: |
+    山峰
+  buffer_size: 64
+  fields:
+    osm_id: osm id
+    name: 名称
+    ele: 海拔(单位米)
+  datasource:
+    geometry_field: geometry
+    key_field: osm_id
+    query: (SELECT osm_id, name, ele, geometry FROM lilu_layer_peak(!bbox!, z(!scale_denominator!), !pixel_width!)) AS t
+schema:
+  - ./function.sql
+datasources:
+  - type: imposm3
+    mapping_file: ./mapping.yaml

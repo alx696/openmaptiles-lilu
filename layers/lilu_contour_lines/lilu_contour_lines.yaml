@@ -9,4 +9,4 @@ layer:
     geometry_field: geometry
     query: (SELECT elevation, geometry FROM layer_lilu_contour_lines(!bbox!, z(!scale_denominator!))) AS t
 schema:
-  - ./lilu_contour_lines.sql
+  - ./function.sql

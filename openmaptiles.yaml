@@ -1,7 +1,6 @@
 tileset:
   layers:
     - layers/water/water.yaml
-    - layers/boundary/boundary.yaml
     - layers/water_name/water_name.yaml
     - layers/waterway/waterway.yaml
     - layers/lilu_contour_lines/lilu_contour_lines.yaml

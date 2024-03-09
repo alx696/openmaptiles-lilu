@@ -19,7 +19,7 @@
         "text-halo-color": "rgba(255, 255, 255, 1)",
         "text-halo-width": 1
       },
-      "order": 32
+      "order": 27
     },
     {
       "id": "lilu_place_city_a",
@@ -48,7 +48,7 @@
           5
         ]
       ],
-      "order": 33
+      "order": 28
     },
     {
       "id": "lilu_place_city_b",
@@ -76,7 +76,7 @@
           5
         ]
       ],
-      "order": 34
+      "order": 29
     },
     {
       "id": "lilu_place_other",
@@ -108,7 +108,7 @@
           "suburb"
         ]
       ],
-      "order": 35
+      "order": 30
     },
     {
       "id": "lilu_place_town",
@@ -137,7 +137,7 @@
           "suburb"
         ]
       ],
-      "order": 36
+      "order": 31
     }
   ]
 }

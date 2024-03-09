@@ -9,7 +9,7 @@
       "paint": {
         "line-color": "rgba(214, 160, 69, 0.2)"
       },
-      "order": 18
+      "order": 13
     },
     {
       "id": "lilu_contour_lines_name_on_point",
@@ -28,7 +28,7 @@
       "paint": {
         "text-color": "rgba(214, 160, 69, 0.8)"
       },
-      "order": 20
+      "order": 14
     },
     {
       "id": "lilu_contour_lines_name_on_line",
@@ -48,7 +48,7 @@
       "paint": {
         "text-color": "rgba(214, 160, 69, 0.8)"
       },
-      "order": 22
+      "order": 15
     }
   ]
 }

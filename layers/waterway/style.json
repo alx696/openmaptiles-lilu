@@ -84,7 +84,7 @@
           1
         ]
       ],
-      "order": 6
+      "order": 4
     },
     {
       "id": "waterway_river_intermittent",
@@ -133,7 +133,7 @@
           1
         ]
       ],
-      "order": 8
+      "order": 5
     },
     {
       "id": "waterway_other",
@@ -179,7 +179,7 @@
           1
         ]
       ],
-      "order": 11
+      "order": 6
     },
     {
       "id": "waterway_other_intermittent",
@@ -229,7 +229,7 @@
           1
         ]
       ],
-      "order": 14
+      "order": 9
     },
     {
       "id": "waterway-bridge-case",
@@ -282,7 +282,7 @@
           "bridge"
         ]
       ],
-      "order": 15
+      "order": 10
     },
     {
       "id": "waterway-bridge",
@@ -322,7 +322,7 @@
           "bridge"
         ]
       ],
-      "order": 16
+      "order": 11
     },
     {
       "id": "waterway_name",
@@ -354,7 +354,7 @@
           "LineString"
         ]
       ],
-      "order": 17
+      "order": 12
     }
   ]
 }

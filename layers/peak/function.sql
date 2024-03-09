@@ -1,3 +1,11 @@
+-- 查询时从错误内容中提取首段数字:
+
+--select name,
+--	COALESCE(substring(ele, '\D*(\d+)\D*'), '0')
+--from osm_peak_point
+--where ele in('5250+', '百秀坡', '65;67.2', '3276,9', '295;295.8')
+--order by id;
+
 -- 通过视图过滤掉无用数据
 CREATE OR REPLACE VIEW lilu_peak_point AS
 (

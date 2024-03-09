@@ -30,7 +30,7 @@
           "LineString"
         ]
       ],
-      "order": 7
+      "order": 3
     },
     {
       "id": "water_name_point",
@@ -66,7 +66,7 @@
           "ocean"
         ]
       ],
-      "order": 8
+      "order": 4
     }
   ]
 }

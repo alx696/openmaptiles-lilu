@@ -38,7 +38,7 @@
           "tunnel"
         ]
       ],
-      "order": 3
+      "order": 5
     },
     {
       "id": "waterway_river",
@@ -84,7 +84,7 @@
           1
         ]
       ],
-      "order": 4
+      "order": 6
     },
     {
       "id": "waterway_river_intermittent",
@@ -133,7 +133,7 @@
           1
         ]
       ],
-      "order": 5
+      "order": 7
     },
     {
       "id": "waterway_other",
@@ -179,7 +179,7 @@
           1
         ]
       ],
-      "order": 6
+      "order": 8
     },
     {
       "id": "waterway_other_intermittent",

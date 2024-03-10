@@ -12,13 +12,13 @@
       "filter": [
         "all",
         [
-          "!in",
+          "in",
           "class",
-          "motorway_construction",
-          "service",
-          "track",
-          "minor",
-          "path"
+          "motorway",
+          "trunk",
+          "primary",
+          "secondary",
+          "tertiary"
         ],
         [
           "<=",
@@ -37,7 +37,7 @@
       "paint": {
         "text-color": "rgba(50, 50, 50, 1)",
         "text-halo-color": "rgba(255, 255, 255, 1)",
-        "text-halo-width": 2
+        "text-halo-width": 1
       },
       "order": 24
     },
@@ -55,9 +55,9 @@
         [
           "in",
           "class",
+          "minor",
           "service",
           "track",
-          "minor",
           "path"
         ],
         [
@@ -77,7 +77,7 @@
       "paint": {
         "text-color": "rgba(50, 50, 50, 1)",
         "text-halo-color": "rgba(255, 255, 255, 1)",
-        "text-halo-width": 2
+        "text-halo-width": 1
       },
       "order": 25
     }

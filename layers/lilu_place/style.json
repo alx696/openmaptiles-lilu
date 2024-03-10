@@ -1,39 +1,18 @@
 {
   "layers": [
     {
-      "id": "lilu_place_province",
-      "type": "symbol",
-      "source": "openmaptiles",
-      "source-layer": "lilu_place",
-      "minzoom": 4,
-      "maxzoom": 5,
-      "layout": {
-        "text-font": [
-          "Noto Sans Regular"
-        ],
-        "text-field": "{name}",
-        "text-size": 16
-      },
-      "paint": {
-        "text-color": "rgba(100, 100, 100, 1)",
-        "text-halo-color": "rgba(255, 255, 255, 1)",
-        "text-halo-width": 1
-      },
-      "order": 27
-    },
-    {
       "id": "lilu_place_city_a",
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "lilu_place",
-      "minzoom": 5,
-      "maxzoom": 7,
+      "minzoom": 4,
+      "maxzoom": 6,
       "layout": {
         "text-font": [
           "Noto Sans Regular"
         ],
         "text-field": "{name}",
-        "text-size": 14
+        "text-size": 12
       },
       "paint": {
         "text-color": "rgba(100, 100, 100, 1)",
@@ -53,40 +32,7 @@
           0
         ]
       ],
-      "order": 28
-    },
-    {
-      "id": "lilu_place_city_b",
-      "type": "symbol",
-      "source": "openmaptiles",
-      "source-layer": "lilu_place",
-      "minzoom": 6,
-      "layout": {
-        "text-font": [
-          "Noto Sans Regular"
-        ],
-        "text-field": "{name}",
-        "text-size": 14
-      },
-      "paint": {
-        "text-color": "rgba(100, 100, 100, 1)",
-        "text-halo-color": "rgba(255, 255, 255, 1)",
-        "text-halo-width": 2
-      },
-      "filter": [
-        "any",
-        [
-          ">",
-          "rank",
-          5
-        ],
-        [
-          "==",
-          "rank",
-          0
-        ]
-      ],
-      "order": 29
+      "order": 27
     },
     {
       "id": "lilu_place_other",
@@ -99,7 +45,7 @@
           "Noto Sans Regular"
         ],
         "text-field": "{name}",
-        "text-size": 10
+        "text-size": 9
       },
       "paint": {
         "text-color": "rgba(100, 100, 100, 1)",
@@ -118,7 +64,7 @@
           "suburb"
         ]
       ],
-      "order": 30
+      "order": 28
     },
     {
       "id": "lilu_place_town",
@@ -131,12 +77,12 @@
           "Noto Sans Regular"
         ],
         "text-field": "{name}",
-        "text-size": 11
+        "text-size": 10
       },
       "paint": {
         "text-color": "rgba(100, 100, 100, 1)",
         "text-halo-color": "rgba(255, 255, 255, 1)",
-        "text-halo-width": 2
+        "text-halo-width": 1
       },
       "filter": [
         "all",
@@ -147,7 +93,87 @@
           "suburb"
         ]
       ],
-      "order": 31
+      "order": 29
+    },
+    {
+      "id": "lilu_place_city_b",
+      "type": "symbol",
+      "source": "openmaptiles",
+      "source-layer": "lilu_place",
+      "minzoom": 6,
+      "layout": {
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-field": "{name}",
+        "text-size": 12
+      },
+      "paint": {
+        "text-color": "rgba(100, 100, 100, 1)",
+        "text-halo-color": "rgba(255, 255, 255, 1)",
+        "text-halo-width": 1
+      },
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "type"
+          ],
+          "city"
+        ],
+        [
+          "any",
+          [
+            "case",
+            [
+              "==",
+              [
+                "typeof",
+                [
+                  "get",
+                  "rank"
+                ]
+              ],
+              "number"
+            ],
+            [
+              "==",
+              [
+                "get",
+                "rank"
+              ],
+              0
+            ],
+            false
+          ],
+          [
+            "case",
+            [
+              "==",
+              [
+                "typeof",
+                [
+                  "get",
+                  "rank"
+                ]
+              ],
+              "number"
+            ],
+            [
+              ">",
+              [
+                "get",
+                "rank"
+              ],
+              5
+            ],
+            false
+          ]
+        ]
+      ],
+      "order": 30
     }
   ]
 }

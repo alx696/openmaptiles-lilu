@@ -2,21 +2,6 @@ CREATE OR REPLACE FUNCTION layer_lilu_place(bbox geometry, zoom_level int, pixel
 RETURNS TABLE (name text, type text, rank int, geometry geometry) AS
 $$
 
--- 省,州
-SELECT name,
-    type,
-    case capital
-            when 'yes' then 1
-            else cast(COALESCE(substring(capital, '\D*(\d+)\D*'), '0') as int)
-        end as rank,
-    geometry
-FROM osm_lilu_place_point
-WHERE geometry && bbox
-    AND zoom_level = 4
-    AND type in ('state', 'province')
-
-UNION ALL
-
 -- 市,区,县
 SELECT name,
     type,
@@ -27,7 +12,7 @@ SELECT name,
     geometry
 FROM osm_lilu_place_point
 WHERE geometry && bbox
-    AND zoom_level >= 5
+    AND zoom_level >= 4
     AND type = 'city'
 
 UNION ALL

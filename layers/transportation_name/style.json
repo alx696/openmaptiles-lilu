@@ -39,7 +39,7 @@
         "text-halo-color": "rgba(255, 255, 255, 1)",
         "text-halo-width": 1
       },
-      "order": 24
+      "order": 25
     },
     {
       "id": "road-small-info",
@@ -79,7 +79,7 @@
         "text-halo-color": "rgba(255, 255, 255, 1)",
         "text-halo-width": 1
       },
-      "order": 25
+      "order": 27
     }
   ]
 }

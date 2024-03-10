@@ -32,7 +32,7 @@
           0
         ]
       ],
-      "order": 27
+      "order": 29
     },
     {
       "id": "lilu_place_other",
@@ -64,7 +64,7 @@
           "suburb"
         ]
       ],
-      "order": 28
+      "order": 30
     },
     {
       "id": "lilu_place_town",
@@ -93,7 +93,7 @@
           "suburb"
         ]
       ],
-      "order": 29
+      "order": 31
     },
     {
       "id": "lilu_place_city_b",
@@ -173,7 +173,7 @@
           ]
         ]
       ],
-      "order": 30
+      "order": 32
     }
   ]
 }
